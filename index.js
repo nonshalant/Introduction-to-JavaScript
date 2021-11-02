@@ -219,11 +219,13 @@ Using the annoyingSong function below do the following:
     "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(numOfBottles){
-      for(let i = numOfBottles; i > 0; i--){
-        let remaining = numOfBottles - 1
-        return  `${numberOfBottles} bottles of soda on the wall, ${numberOfBottles} bottles of soda, take one down pass it around ${remaining} bottles of soda on the wall`
+function annoyingSong(number){
+      for(let i = number; i > 0; i--){
+        let remaining = number - 1
+        let song = `${number} bottles of soda on the wall, ${number} bottles of soda, take one down pass it around ${remaining} bottles of soda on the wall`
+        return song
       }
+      
 }
 
 console.log(annoyingSong(99))
@@ -253,7 +255,9 @@ if(studentGrade <= 100 && studentGrade >= 90){
   return 'you got a C'
 }else if(studentGrade <= 69 && studentGrade >= 60){
   return 'you got a D'
-}else('you got an F')
+}else{
+  return 'you got an F'
+}
 }
 
 console.log(grade(100))
@@ -271,8 +275,8 @@ HINT - try looking up the .includes() method
 */
 
 
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
+function vowelCounter(array) {  
+  return array.includes('a','e','i','o','u')
 }
 
 
