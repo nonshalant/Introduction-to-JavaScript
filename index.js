@@ -74,7 +74,7 @@ Do the following:
 */
 
 function multiply(num1, num2){
-  num1 * num2;
+ return num1 * num2;
 }
 multiply(2*2);
 
@@ -189,7 +189,7 @@ Using the miles function below do the following:
 
 function miles(kilos){
   /*add your code here*/
-  let conversion =  kilos / 1.609;
+  let conversion =  kilos * 0.62;
   return conversion;
 
 }
