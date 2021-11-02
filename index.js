@@ -248,7 +248,7 @@ Using the grade function below do the following:
 
 function grade(studentGrade){
 if(studentGrade <= 100 && studentGrade >= 90){
-  return 'you got a A'
+  return 'you got an A'
 }else if(studentGrade <= 89 && studentGrade >= 80){
   return 'you got a B'
 }else if(studentGrade <= 79 && studentGrade >= 70){
