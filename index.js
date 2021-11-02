@@ -189,7 +189,7 @@ Using the miles function below do the following:
 
 function miles(kilos){
   /*add your code here*/
-  let conversion =  kilos * 0.62137;
+  let conversion =  kilos / 1.609;
   return conversion;
 
 }
@@ -202,8 +202,9 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(cm){
+  let converted = cm / 30.48;
+  return converted;
 }
 
 
