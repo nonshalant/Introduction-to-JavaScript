@@ -20,20 +20,30 @@ Do the following:
    HINT: no function required
 */
 
+let votingAge = 23;
+if(votingAge >= 18){
+  console.log(true);
+}
 
 
 /*
 Task 1b - Values
 
 Do the following:   
-   1. Declare two variables and assign them values
+   1. Declare two variables and assign them values  
    2. Use a conditional to change the value of the 1st variable based on the value assigned to the 2nd variable
    3. Console log the new value of the 1st variable
 
    HINT: no function required
 */
 
+let shamir = 'age';
+let tiana = 'old';
 
+if(tiana == 'old'){
+  shamir = 'young';
+  console.log(shamir);
+}
 
 
 
@@ -48,6 +58,9 @@ Do the following:
    HINT: look up the Number method
 */
 
+let num = '1999';
+let newNum = parseInt(num, 10);
+
 
 
 
@@ -60,10 +73,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-  /*add your code here*/
+function multiply(num1, num2){
+  num1 * num2;
 }
-
+multiply(2*2);
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -76,10 +89,12 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(dogAge){
+ return dogAge * 7
+
 }
 
+dogYears(10)
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -109,9 +124,26 @@ Puppies less than 1 year
 NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
+function hungryDog(weight, age){
   /*add your code here*/
+  if(age>= 1 && weight <= 5){
+    return weight * 0.05;
+  }else if(age >= 1 && weight >= 6 && weight <=10){
+    return weight * 0.04;
+  }else if(age >= 1 && weight > 11 && weight <= 15){
+    return weight * 0.03;
+  }else if(age >= 1 && weight > 15){
+    return weight * 0.02;
+  }else if(age < 1 && age >= 0.583){
+    return weight * 0.04;
+  }else if ( age < 0.583 && age >= 0.333){
+    return weight * 0.05;
+  }else if(age< 0.333){
+    return weight * 0.1
+  }
 }
+
+hungryDog(20, 5)
 
 
 
@@ -135,6 +167,7 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
+let randomNum = Math.floor(Math.random() * 3) + 1;
 
 function game(user, computer){
   /*add your code here*/
@@ -142,6 +175,7 @@ function game(user, computer){
 
 
 
+console.log(Math.random)
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
 //Metric Converter 
@@ -153,11 +187,12 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
+function miles(kilos){
   /*add your code here*/
+  let conversion =  kilos * 0.62137;
+  return conversion;
+
 }
-
-
 
 //Task 5b - Feet to CM
 /*
