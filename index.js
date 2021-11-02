@@ -219,9 +219,14 @@ Using the annoyingSong function below do the following:
     "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+function annoyingSong(numOfBottles){
+      for(let i = numOfBottles; i > 0; i--){
+        let remaining = numOfBottles - 1
+        return  "{numberOfBottles} bottles of soda on the wall, {numberOfBottles} bottles of soda, take one down pass it around {remaining} bottles of soda on the wall"
+      }
 }
+
+console.log(annoyingSong(99))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -239,11 +244,19 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
+function grade(studentGrade){
+if(studentGrade <= 100 && studentGrade >= 90){
+  return 'you got a A'
+}else if(studentGrade <= 89 && studentGrade >= 80){
+  return 'you got a B'
+}else if(studentGrade <= 79 && studentGrade >= 70){
+  return 'you got a C'
+}else if(studentGrade <= 69 && studentGrade >= 60){
+  return 'you got a D'
+}else('you got an F')
 }
 
-
+console.log(grade(100))
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
